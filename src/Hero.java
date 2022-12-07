@@ -1,7 +1,7 @@
 public class Hero extends Warrior{
 
-    public Hero(String name, Integer healthpoints, Weapon weapon) {
-        super(name, healthpoints, weapon);
+    public Hero(String name, Integer healthpoints, Weapon weapon, Shield shield) {
+        super(name, healthpoints, weapon, shield);
     }
 
     @Override

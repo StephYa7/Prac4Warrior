@@ -1,9 +1,9 @@
-public class Archer extends Warrior<Bow> {
+public class Archer extends Warrior<Bow,LightShield> {
 
     private Integer range;
 
-    public Archer(String name, Integer healthpoints, Bow weapon,Integer range) {
-        super(name, healthpoints, weapon);
+    public Archer(String name, Integer healthpoints, Bow weapon,LightShield shield , Integer range) {
+        super(name, healthpoints, weapon, shield);
         this.range = range;
     }
 

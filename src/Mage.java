@@ -1,11 +1,11 @@
-public class Mage extends Warrior<Staff> {
+public class Mage extends Warrior<Staff,LightShield> {
 
     private Integer range;
     private Integer mana;
 
 
-    public Mage(String name, Integer healthpoints, Staff weapon,Integer range, Integer mana) {
-        super(name, healthpoints, weapon);
+    public Mage(String name, Integer healthpoints, Staff weapon,Integer range,LightShield shield, Integer mana) {
+        super(name, healthpoints, weapon,shield);
         this.range = range;
         this.mana = mana;
     }

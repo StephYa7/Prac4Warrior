@@ -1,12 +1,15 @@
-public abstract class Warrior <T extends Weapon> {
+public abstract class Warrior<T extends Weapon, C extends Shield> {
     private String name;
     private Integer healthpoints;
     private T weapon;
 
-    public Warrior(String name, Integer healthpoints, T weapon) {
+    private C shield;
+
+    public Warrior(String name, Integer healthpoints, T weapon, C shield) {
         this.name = name;
         this.healthpoints = healthpoints;
         this.weapon = weapon;
+        this.shield = shield;
     }
 
     public String getName() {
@@ -19,6 +22,10 @@ public abstract class Warrior <T extends Weapon> {
 
     public Weapon getWeapon() {
         return weapon;
+    }
+
+    public Shield getShield() {
+        return shield;
     }
 
     public void setHealthpoints(Integer healthpoints) {
